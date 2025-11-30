@@ -51,6 +51,16 @@
   },
   {
     "ContainingType": "WhatsappBot.Controllers.WhatsAppController",
+    "Method": "SendTestImage",
+    "RelativePath": "api/whatsapp/send-test-image",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhatsappBot.Controllers.WhatsAppController",
     "Method": "SendText",
     "RelativePath": "api/whatsapp/send-text",
     "HttpMethod": "POST",

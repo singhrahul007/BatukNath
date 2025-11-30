@@ -130,6 +130,18 @@
         }
       }
     },
+    "/api/whatsapp/send-test-image": {
+      "get": {
+        "tags": [
+          "WhatsApp"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/": {
       "get": {
         "tags": [

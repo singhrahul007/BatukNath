@@ -27,5 +27,29 @@
         public DateTime SentAt { get; set; }
         public string Status { get; set; } // success, failed
     }
+    public class WhatsAppMediaMessage
+    {
+        public string From { get; set; }
+        public string MediaId { get; set; }
+        public string MimeType { get; set; }
+        public string Caption { get; set; }
+    }
+    public class OrderState
+    {
+        public string Step { get; set; }
+        public string Product { get; set; }
+        public int Quantity { get; set; }
+    }
+    public class OrderSession
+    {
+        public string Phone { get; set; }
+        public int Step { get; set; } 
+        public string ProductName { get; set; }
+        public string Quantity { get; set; }
+        public string Address { get; set; }
+        public string User { get; set; }
+    }
+
+
 }
 

@@ -144,3 +144,4 @@ G:\Whatsapp-Bot\whatsapp-bot-full\WhatsappBot\bin\Debug\net8.0\runtimes\win\lib\
 G:\Whatsapp-Bot\whatsapp-bot-full\WhatsappBot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 G:\Whatsapp-Bot\whatsapp-bot-full\WhatsappBot\bin\Debug\net8.0\appsettings.json
 G:\Whatsapp-Bot\whatsapp-bot-full\WhatsappBot\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\Whatsapp-Bot\whatsapp-bot-full\WhatsappBot\obj\Debug\net8.0\WhatsappBot.sourcelink.json

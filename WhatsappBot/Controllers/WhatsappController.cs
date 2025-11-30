@@ -9,7 +9,8 @@ namespace WhatsappBot.Controllers
     public class WhatsAppController : ControllerBase
     {
         private readonly IWhatsAppApiService _whatsAppService;
-
+        private static Dictionary<string, OrderSession> _orderSessions
+    = new Dictionary<string, OrderSession>();
         public WhatsAppController(IWhatsAppApiService whatsAppService)
         {
             _whatsAppService = whatsAppService;
@@ -34,6 +35,17 @@ namespace WhatsappBot.Controllers
         {
             var result = await _whatsAppService.SendTemplateAsync(body.Number, body.TemplateName, body.Parameters);
             return Ok(result);
+        }
+        [HttpGet("send-test-image")]
+        public async Task<IActionResult> SendTestImage()
+        {
+            string phone = "91xxxxxxxxxx";
+            string filePath = "wwwroot/test-image.jpg";
+
+            var mediaId = await _whatsAppService.UploadMedia(filePath, "image/jpeg");
+            await _whatsAppService.SendImage(phone, mediaId, "Here is your image!");
+
+            return Ok("Image sent!");
         }
     }
 }
