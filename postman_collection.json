@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "WhatsApp Bot API",
+    "_postman_id": "123",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Verify Webhook",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/webhook?hub_mode=subscribe&hub_challenge=123&hub_verify_token=your_verify_token"
+      }
+    },
+    {
+      "name": "Send Test Message",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/webhook",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"test\":\"hello\"}"
+        }
+      }
+    }
+  ]
+}
