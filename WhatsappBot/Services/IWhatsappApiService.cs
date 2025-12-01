@@ -9,4 +9,10 @@
         Task SendImage(string to, string mediaId, string caption = "");
         Task<string> GetMediaUrl(string mediaId);
     }
+    public interface INlpService
+    {
+        Task<string> DetectIntent(string userMessage);
+        string ExtractIntent(string json);
+    }
+
 }

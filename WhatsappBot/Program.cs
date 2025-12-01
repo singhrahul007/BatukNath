@@ -4,6 +4,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using WhatsappBot.Data;
+using WhatsappBot.Model;
 using WhatsappBot.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,10 +26,12 @@ builder.WebHost.ConfigureKestrel(options =>
 // Add DB Context
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddSingleton<INlpService, NlpService>();
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IWhatsAppApiService, MockWhatsAppApiService>();
 builder.Services.AddSingleton<WhatsAppService>();
+builder.Services.AddSingleton<ManualIntent>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();       

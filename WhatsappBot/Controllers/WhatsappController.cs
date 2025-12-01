@@ -47,5 +47,6 @@ namespace WhatsappBot.Controllers
 
             return Ok("Image sent!");
         }
+
     }
 }
