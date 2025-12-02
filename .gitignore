@@ -1,0 +1,47 @@
+# Visual Studio cache
+.vs/
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Rider
+.idea/
+
+# IIS Express
+iisexpress/
+
+# Publish folder
+wwwroot/dist/
+wwwroot/lib/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet-specific
+project.lock.json
+project.fragment.lock.json
+
+# MSBuild
+*.cache
+*.config
+
+# Secrets
+*.secret.json
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.*.json
